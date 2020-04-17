@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo soket io</title>
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+        let socket = io("localhost:3000");
+        $('document').ready(()=>{
+            $('#btn').click(()=>{
+                socket.emit("cline","Xin chao")
+            })
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <button id="btn" type="button">Click send</button>
+    </form>
+</body>
+</html>
