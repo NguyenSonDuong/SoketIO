@@ -1,0 +1,27 @@
+{
+  "name": "soketio",
+  "version": "1.0.0",
+  "description": "Web server và Soket.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenSonDuong/SoketIO.git"
+  },
+  "keywords": [
+    "SoketIO"
+  ],
+  "author": "HunterDemon9x99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenSonDuong/SoketIO/issues"
+  },
+  "homepage": "https://github.com/NguyenSonDuong/SoketIO#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "soket.io": "0.0.1-security"
+  }
+}
