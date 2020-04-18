@@ -7,16 +7,37 @@
     <script src="socket.io/socket.io.js"></script>
     <script>
         let socket = io("localhost:3000");
+
+        socket.on("server",(data)=>{
+            $("#data").append(""+data+"<br>");
+        });
+        
+
         $('document').ready(()=>{
             $('#btn').click(()=>{
-                socket.emit("cline","Xin chao")
+                var data = {
+                    "message":$("#message").val(),
+                    "to":$("#to").val()
+                }
+                socket.emit("cline",data);
             })
+            $("#btnLogin").click(()=>{
+                var name = $("#name").val();
+                socket.emit("init",name);
+            });
         });
     </script>
 </head>
 <body>
     <form>
+        <input type="text" id="name" />
+        <button id="btnLogin" type="button">Dang nhap</button>
+        <input type="text" id="message" />
+        <input type="text" id="to" />
         <button id="btn" type="button">Click send</button>
     </form>
+    <div id="data">
+
+    </div>
 </body>
 </html>
