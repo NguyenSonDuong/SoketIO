@@ -21,7 +21,7 @@
   "homepage": "https://github.com/NguyenSonDuong/SoketIO#readme",
   "dependencies": {
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "socket.io": "^2.3.0",
     "soket.io": "0.0.1-security"
   }
